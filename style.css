@@ -25,6 +25,10 @@ h1 {
   color: #ff4d4d;
   margin-bottom: 20px;
 }
+.message{
+    font-weight: bold;
+    font-style: italic;
+}
 p {
   color: #333;
 }
