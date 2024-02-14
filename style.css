@@ -1,0 +1,64 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  width: 300px;
+  height: 450px;
+  background-color: #ffcccc;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  border: 2px solid greenyellow;
+  animation-name:bg;
+  animation-duration: 4s;
+}
+h1 {
+  color: #ff4d4d;
+  margin-bottom: 20px;
+}
+p {
+  color: #333;
+}
+.heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+.heart::before,
+.heart::after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background-color: #ff4d4d;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+.card p{
+    color:red;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+@keyframes bg {
+    from {background-color: greenyellow;}
+    to {background-color:#ffcccc;}
+  }
+
